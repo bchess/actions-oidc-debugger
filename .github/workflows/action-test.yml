@@ -23,4 +23,4 @@ jobs:
       - name: Debug OIDC Claims
         uses: ./
         with:
-          audience: 'https://github.com/github'
+          audience: 'https://github.com/bchess'
