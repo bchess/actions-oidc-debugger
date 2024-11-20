@@ -1,9 +1,13 @@
 ---
 name: Test Debugger Action
-on: 
+on:
+  release:
+    types: [ published ]
+
   pull_request:
     branches:
       - main
+
   workflow_dispatch:
 
 jobs:
@@ -19,4 +23,4 @@ jobs:
       - name: Debug OIDC Claims
         uses: ./
         with:
-          audience: 'https://github.com/github'
+          audience: 'https://github.com/bchess'
